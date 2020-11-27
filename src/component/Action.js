@@ -9,7 +9,7 @@ const Action = ({ person, modifySuperficialChoices }) => (
         <Rewind userId= {person.id} />
         <Dislike
             userId={person.id}
-            modifySuperificialChoices={modifySuperficialChoices}
+            modifySuperficialChoices={modifySuperficialChoices}
         />
         <Like 
             userId={person.id}

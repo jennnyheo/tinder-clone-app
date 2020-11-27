@@ -9,13 +9,13 @@ const Lonely = ({ activeUserImage, likedUsers, superLikedUsers }) => (
             <img src={`/images/users/${activeUserImage}`} alt="You.." />
         </span>
     <div id="liked-people">
-        <p>{likedUsers.length > 0 && "People you liked.. "}</p>
-        {likedUsers.map(item => (
+        <p>{likedUsers.length > 0 ? "People you liked.. ": ''}</p>
+             {likedUsers.map(item => (
             <LikedPerson key={item.id} person={item} />
         ))}
 
-        <p>{superLikedUsers.length && 'people you super liked! '}</p>
-        {superLikedUsers.map(item => (
+        <p>{superLikedUsers.length > 0 ? 'people you super liked! ' : ''}</p>
+            {superLikedUsers.map(item => (
             <LikedPerson key={item.id} person={item} />
         ))}
     </div>

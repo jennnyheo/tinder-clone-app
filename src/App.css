@@ -42,7 +42,7 @@ header .fl{
   width: 33%;
 }
 
-header .fl:last-child {
+header .fl:first-child {
   text-align: left;
 }
 
@@ -102,12 +102,7 @@ header .fl:last-child {
   height: auto;
 }
 
-/**#action button:nth-of-type(2),
-#action button:nth-of-type(3) {
-  width: 60px;
-  height: 60px;
-  padding: 15px;
-}**//
+
 
 #lonely {
   padding: 10px;
@@ -137,11 +132,9 @@ header .fl:last-child {
   border-radius: 5px;
 }
 
-#liked-people .liked-person-image {
-  border-radius: 5px;
-}
+  
 
-#liked-people .liked-person-img img{
+#liked-people .liked-person-image img{
   width: 140px;
   height: 100px;
   object-fit: cover;
